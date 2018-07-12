@@ -1,0 +1,22 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.provision "shell", inline: "sudo apt-get install git -y"
+
+  config.vm.define "master" do |master|
+     master.vm.box = "ubuntu/trusty64"
+     master.vm.network "private_network", ip: "192.168.33.1"
+  end
+
+  config.vm.define "slave" do |slave|
+     slave.vm.box = "ubuntu/trusty64"
+     slave.vm.network "private_network", ip: "192.168.33.2"
+  end
+
+end
+
