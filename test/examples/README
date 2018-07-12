@@ -1,0 +1,18 @@
+The vagrantfile here contains defines a cluster of VM's that can all talk to each other so that murder can be quickly tested on a cluster of variable size.
+
+guide for vagrant vm clusters :
+http://jessesnet.com/development-notes/2014/vagrant-virtual-machine-cluster/
+
+## spin up test environment
+```
+$ vagrant up
+```
+
+
+
+# tear down vm's
+```
+$
+```
+
+
