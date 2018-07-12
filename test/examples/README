@@ -12,7 +12,7 @@ $ vagrant up
 
 # tear down vm's
 ```
-$
+$ vagrant destroy -f
 ```
 
 

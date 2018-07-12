@@ -1,6 +1,7 @@
 # Project specific files
 extra
 pkg/*
+test/examples/.vagrant
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
